@@ -1,0 +1,13 @@
+# Windows scripts must keep CRLF line endings on any platform,
+# otherwise .bat/.vbs may break after clone with core.autocrlf differences.
+* text=auto
+*.bat text eol=crlf
+*.vbs text eol=crlf
+*.ps1 text eol=crlf
+*.txt text eol=crlf
+*.md  text eol=crlf
+
+# Binary assets
+*.png binary
+*.ico binary
+*.lnk binary
